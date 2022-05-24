@@ -19,9 +19,9 @@ public class DockerSpringApplication {
 	@RequestMapping("/")
 	public ResponseEntity<List<Events>> home() {
 		
-		Events ev1 = new Events(1,"Primeira Evento", "descrição 1 descrição 1");
-		Events ev2 = new Events(2, "Segundo Evento", "descrição 2 descrição 2");
-		Events ev3 = new Events(3, "Terceiro Evento", "descrição 3 descrição 3");
+		Events ev1 = new Events(1,"Primeira Evento", "descrição 1...","2022-04-02T09:00:00Z","09:00:00","11:00:00",true);
+		Events ev2 = new Events(2, "Segundo Evento", "descrição 2...","2022-04-17T15:00:00Z","15:00:00","17:00:00",false);
+		Events ev3 = new Events(3, "Terceiro Evento", "descrição 3...","2022-04-30T20:00:00Z","18:00:00","20:00:00",true);
 		
 		return new ResponseEntity<>(Arrays.asList(ev1, ev2,ev3) , HttpStatus.OK);
 	}

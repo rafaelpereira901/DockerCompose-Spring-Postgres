@@ -3,25 +3,25 @@ package com.lad_corp.dockerspring;
 
 public class Events {
 	
-	public int eventoId;
-	public String nome;
-	public String descricao;
-	public String local = "Local do evento";
-	public String data;
-	public String hora;
-	public String horaFim;
-	public String url = "https://www.google.com.br";
-	public String image = "imagem?";
-	public boolean aoVivo = true;
-	public String aoVivoUrl =  "https://www.google.com.br/maps";
+	public int EventoId;
+	public String Nome;
+	public String Descricao;
+	public String Local = "Local do evento";
+	public String Data;
+	public String Hora;
+	public String HoraFim;
+	public String Url = "https://www.google.com.br";
+	public String Image = "imagem?";
+	public boolean AoVivo = true;
+	public String AoVivoUrl =  "https://www.google.com.br/maps";
 	
 	public Events(int eventoId, String nome, String descricao, String data, String hora,String hora_fim, boolean aoVivo) {
-		this.eventoId = eventoId;
-		this.nome = nome;
-		this.descricao = descricao;
-		this.data = data;
-		this.hora = hora;
-		this.horaFim = hora_fim;
-		this.aoVivo = aoVivo;
+		this.EventoId = eventoId;
+		this.Nome = nome;
+		this.Descricao = descricao;
+		this.Data = data;
+		this.Hora = hora;
+		this.HoraFim = hora_fim;
+		this.AoVivo = aoVivo;
 	}
 }
